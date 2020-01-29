@@ -1,6 +1,6 @@
 ## Welcome to CoreMLBats
 
-CoreMLBats is provided by ecoObs GmbH and Volker Runkel as a demo application that uses Apple ML framework and a trained image model for classification of bat calls based on sonagrams of single calls. Download the [binary version ready to run](docs/CoreMLBats.zip)
+CoreMLBats is provided by ecoObs GmbH and Volker Runkel as a demo application that uses Apple ML framework and a trained image model for classification of bat calls based on sonagrams of single calls. Download the [binary version ready to run](https://github.com/vrunkel/CoreMLBats/blob/master/docs/CoreMLBats.zip)
 
 ![CoreMLBats icon](256.png "CoreMLBats icon")
 
