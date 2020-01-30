@@ -12,6 +12,7 @@
 		8B17911D23A3D7F700285F18 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B17911B23A3D7F700285F18 /* MainMenu.xib */; };
 		8B17912723A3D8A700285F18 /* CoreML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B17912623A3D8A700285F18 /* CoreML.framework */; };
 		8B17912B23A3F32F00285F18 /* Vision.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B17912A23A3F32F00285F18 /* Vision.framework */; };
+		8B398E7123E2CF8A00AA973C /* NyctaloidBatCallswithoutVmur.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 8B398E6F23E2CF8A00AA973C /* NyctaloidBatCallswithoutVmur.mlmodel */; };
 		8BEBDE8723E090AB0074D573 /* NyctaloidBatCalls.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 8BEBDE8623E090AB0074D573 /* NyctaloidBatCalls.mlmodel */; };
 /* End PBXBuildFile section */
 
@@ -24,6 +25,7 @@
 		8B17911F23A3D7F700285F18 /* CoreMLBats.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CoreMLBats.entitlements; sourceTree = "<group>"; };
 		8B17912623A3D8A700285F18 /* CoreML.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreML.framework; path = System/Library/Frameworks/CoreML.framework; sourceTree = SDKROOT; };
 		8B17912A23A3F32F00285F18 /* Vision.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Vision.framework; path = System/Library/Frameworks/Vision.framework; sourceTree = SDKROOT; };
+		8B398E6F23E2CF8A00AA973C /* NyctaloidBatCallswithoutVmur.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = NyctaloidBatCallswithoutVmur.mlmodel; sourceTree = "<group>"; };
 		8BEBDE8623E090AB0074D573 /* NyctaloidBatCalls.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = NyctaloidBatCalls.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -61,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				8BEBDE8623E090AB0074D573 /* NyctaloidBatCalls.mlmodel */,
+				8B398E6F23E2CF8A00AA973C /* NyctaloidBatCallswithoutVmur.mlmodel */,
 				8B17911723A3D7F500285F18 /* AppDelegate.swift */,
 				8B17911923A3D7F700285F18 /* Assets.xcassets */,
 				8B17911B23A3D7F700285F18 /* MainMenu.xib */,
@@ -150,6 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8BEBDE8723E090AB0074D573 /* NyctaloidBatCalls.mlmodel in Sources */,
+				8B398E7123E2CF8A00AA973C /* NyctaloidBatCallswithoutVmur.mlmodel in Sources */,
 				8B17911823A3D7F500285F18 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,6 +292,7 @@
 				CODE_SIGN_ENTITLEMENTS = CoreMLBats/CoreMLBats.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 3YKFA98U4Y;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = CoreMLBats/Info.plist;
@@ -295,6 +300,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MARKETING_VERSION = 1.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = de.ecoobs.CoreMLBats;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -308,6 +314,7 @@
 				CODE_SIGN_ENTITLEMENTS = CoreMLBats/CoreMLBats.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 3YKFA98U4Y;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = CoreMLBats/Info.plist;
@@ -315,6 +322,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MARKETING_VERSION = 1.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = de.ecoobs.CoreMLBats;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

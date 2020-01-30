@@ -15,14 +15,27 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     @IBOutlet weak var window: NSWindow!
     @IBOutlet weak var classificationLabel: NSTextField!
+    @IBOutlet weak var inputFile: NSTextField!
     @IBOutlet weak var imagePreview: NSImageView!
+    @IBOutlet weak var modelPanel: NSPanel!
+    @IBOutlet weak var modelPopup: NSPopUpButton!
     
     // MARK: - Image Classification
     
     /// - Tag: MLModelSetup
+    
+    var selectedModelIndex: Int = 1
+    
     lazy var classificationRequest: VNCoreMLRequest = {
         do {
-            let model = try VNCoreMLModel(for: NyctaloidBatCalls().model)
+            var model : VNCoreMLModel
+            
+            if self.selectedModelIndex == 0 {
+                model = try VNCoreMLModel(for: NyctaloidBatCalls().model)
+            }
+            else {
+                model = try VNCoreMLModel(for: NyctaloidBatCallswithoutVmur().model)
+            }
             
             let request = VNCoreMLRequest(model: model, completionHandler: { [weak self] request, error in
                 self?.processClassifications(for: request, error: error)
@@ -80,6 +93,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application
+        self.window.beginSheet(self.modelPanel) { response in
+            //self.modelPanel.performClose(nil)
+        }
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
@@ -91,6 +107,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         openPanel.allowedFileTypes = NSImage.imageTypes
         let response = openPanel.runModal()
         if response == .OK {
+            self.inputFile.stringValue = openPanel.url?.lastPathComponent ?? "---"
             if let image = NSImage(contentsOf: openPanel.url!) {
                 self.imagePreview.image = image
                 self.updateClassifications(for: image)
@@ -99,10 +116,18 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
     
     @IBAction func openImageFromDrop(_ sender: NSImageView) {
+        self.inputFile.stringValue = "dropped"
         if let image = sender.image {
             self.updateClassifications(for: image)
         }
     }
 
+    @IBAction func selectModelIndex(_ sender: AnyObject) {
+        self.selectedModelIndex = self.modelPopup.indexOfSelectedItem
+    }
+    
+    @IBAction func endModelPanel(_ sender: AnyObject) {
+        self.window.endSheet(self.modelPanel)
+    }
 }
 
