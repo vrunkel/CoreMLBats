@@ -17,25 +17,20 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @IBOutlet weak var classificationLabel: NSTextField!
     @IBOutlet weak var inputFile: NSTextField!
     @IBOutlet weak var imagePreview: NSImageView!
-    @IBOutlet weak var modelPanel: NSPanel!
-    @IBOutlet weak var modelPopup: NSPopUpButton!
+    
+    var bForestWindowController: BoostedForestWindowController?
     
     // MARK: - Image Classification
     
     /// - Tag: MLModelSetup
     
-    var selectedModelIndex: Int = 1
     
     lazy var classificationRequest: VNCoreMLRequest = {
         do {
             var model : VNCoreMLModel
-            
-            if self.selectedModelIndex == 0 {
-                model = try VNCoreMLModel(for: NyctaloidBatCalls().model)
-            }
-            else {
-                model = try VNCoreMLModel(for: NyctaloidBatCallswithoutVmur().model)
-            }
+            let imageClassifier = try BatGroupsSonagramClassifier(configuration: MLModelConfiguration())
+            model = try VNCoreMLModel(for: imageClassifier.model)
+            //model = try VNCoreMLModel(for: BatGroupsSonagramClassifier().model)
             
             let request = VNCoreMLRequest(model: model, completionHandler: { [weak self] request, error in
                 self?.processClassifications(for: request, error: error)
@@ -93,9 +88,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application
-        self.window.beginSheet(self.modelPanel) { response in
-            //self.modelPanel.performClose(nil)
-        }
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
@@ -122,12 +114,12 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         }
     }
 
-    @IBAction func selectModelIndex(_ sender: AnyObject) {
-        self.selectedModelIndex = self.modelPopup.indexOfSelectedItem
+    @IBAction func openBoostedForest(_ sender: Any) {
+        if self.bForestWindowController == nil {
+            self.bForestWindowController = BoostedForestWindowController(windowNibName: "BoostedForestWindowController")
+        }
+        self.bForestWindowController?.showWindow(nil)
     }
     
-    @IBAction func endModelPanel(_ sender: AnyObject) {
-        self.window.endSheet(self.modelPanel)
-    }
 }
 

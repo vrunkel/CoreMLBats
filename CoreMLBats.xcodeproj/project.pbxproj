@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 53;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,8 +12,15 @@
 		8B17911D23A3D7F700285F18 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B17911B23A3D7F700285F18 /* MainMenu.xib */; };
 		8B17912723A3D8A700285F18 /* CoreML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B17912623A3D8A700285F18 /* CoreML.framework */; };
 		8B17912B23A3F32F00285F18 /* Vision.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B17912A23A3F32F00285F18 /* Vision.framework */; };
-		8B398E7123E2CF8A00AA973C /* NyctaloidBatCallswithoutVmur.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 8B398E6F23E2CF8A00AA973C /* NyctaloidBatCallswithoutVmur.mlmodel */; };
-		8BEBDE8723E090AB0074D573 /* NyctaloidBatCalls.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 8BEBDE8623E090AB0074D573 /* NyctaloidBatCalls.mlmodel */; };
+		8B7406B22A53F84200AA652A /* BatGroupsSonagramClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 8B7406B12A53F84200AA652A /* BatGroupsSonagramClassifier.mlmodel */; };
+		8B7406B52A53FB0200AA652A /* BatCallTabularClassifier rF.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 8B7406B32A53FB0200AA652A /* BatCallTabularClassifier rF.mlmodel */; };
+		8B7406B62A53FB0200AA652A /* BatCallTabularClassifier bT.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 8B7406B42A53FB0200AA652A /* BatCallTabularClassifier bT.mlmodel */; };
+		8B7406BA2A53FB4600AA652A /* BatCallTabularClassifier Arten bT.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 8B7406B82A53FB4600AA652A /* BatCallTabularClassifier Arten bT.mlmodel */; };
+		8B7406BB2A53FB4600AA652A /* BatCallTabularClassifier Arten rF.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 8B7406B92A53FB4600AA652A /* BatCallTabularClassifier Arten rF.mlmodel */; };
+		8B7406BE2A54100A00AA652A /* BoostedForestWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7406BC2A54100A00AA652A /* BoostedForestWindowController.swift */; };
+		8B7406BF2A54100A00AA652A /* BoostedForestWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B7406BD2A54100A00AA652A /* BoostedForestWindowController.xib */; };
+		8B7406C12A542C5A00AA652A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7406C02A542C5A00AA652A /* Extensions.swift */; };
+		8B7406C32A54405200AA652A /* CreateML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B7406C22A54405200AA652A /* CreateML.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,8 +32,15 @@
 		8B17911F23A3D7F700285F18 /* CoreMLBats.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CoreMLBats.entitlements; sourceTree = "<group>"; };
 		8B17912623A3D8A700285F18 /* CoreML.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreML.framework; path = System/Library/Frameworks/CoreML.framework; sourceTree = SDKROOT; };
 		8B17912A23A3F32F00285F18 /* Vision.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Vision.framework; path = System/Library/Frameworks/Vision.framework; sourceTree = SDKROOT; };
-		8B398E6F23E2CF8A00AA973C /* NyctaloidBatCallswithoutVmur.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = NyctaloidBatCallswithoutVmur.mlmodel; sourceTree = "<group>"; };
-		8BEBDE8623E090AB0074D573 /* NyctaloidBatCalls.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = NyctaloidBatCalls.mlmodel; sourceTree = "<group>"; };
+		8B7406B12A53F84200AA652A /* BatGroupsSonagramClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = BatGroupsSonagramClassifier.mlmodel; sourceTree = "<group>"; };
+		8B7406B32A53FB0200AA652A /* BatCallTabularClassifier rF.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = "BatCallTabularClassifier rF.mlmodel"; sourceTree = "<group>"; };
+		8B7406B42A53FB0200AA652A /* BatCallTabularClassifier bT.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = "BatCallTabularClassifier bT.mlmodel"; sourceTree = "<group>"; };
+		8B7406B82A53FB4600AA652A /* BatCallTabularClassifier Arten bT.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = "BatCallTabularClassifier Arten bT.mlmodel"; sourceTree = "<group>"; };
+		8B7406B92A53FB4600AA652A /* BatCallTabularClassifier Arten rF.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = "BatCallTabularClassifier Arten rF.mlmodel"; sourceTree = "<group>"; };
+		8B7406BC2A54100A00AA652A /* BoostedForestWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoostedForestWindowController.swift; sourceTree = "<group>"; };
+		8B7406BD2A54100A00AA652A /* BoostedForestWindowController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BoostedForestWindowController.xib; sourceTree = "<group>"; };
+		8B7406C02A542C5A00AA652A /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		8B7406C22A54405200AA652A /* CreateML.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CreateML.framework; path = System/Library/Frameworks/CreateML.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +50,7 @@
 			files = (
 				8B17912B23A3F32F00285F18 /* Vision.framework in Frameworks */,
 				8B17912723A3D8A700285F18 /* CoreML.framework in Frameworks */,
+				8B7406C32A54405200AA652A /* CreateML.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,13 +77,15 @@
 		8B17911623A3D7F500285F18 /* CoreMLBats */ = {
 			isa = PBXGroup;
 			children = (
-				8BEBDE8623E090AB0074D573 /* NyctaloidBatCalls.mlmodel */,
-				8B398E6F23E2CF8A00AA973C /* NyctaloidBatCallswithoutVmur.mlmodel */,
+				8B7406B72A53FB0600AA652A /* ML Models */,
 				8B17911723A3D7F500285F18 /* AppDelegate.swift */,
+				8B7406C02A542C5A00AA652A /* Extensions.swift */,
 				8B17911923A3D7F700285F18 /* Assets.xcassets */,
 				8B17911B23A3D7F700285F18 /* MainMenu.xib */,
 				8B17911E23A3D7F700285F18 /* Info.plist */,
 				8B17911F23A3D7F700285F18 /* CoreMLBats.entitlements */,
+				8B7406BC2A54100A00AA652A /* BoostedForestWindowController.swift */,
+				8B7406BD2A54100A00AA652A /* BoostedForestWindowController.xib */,
 			);
 			path = CoreMLBats;
 			sourceTree = "<group>";
@@ -76,10 +93,23 @@
 		8B17912523A3D8A700285F18 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8B7406C22A54405200AA652A /* CreateML.framework */,
 				8B17912A23A3F32F00285F18 /* Vision.framework */,
 				8B17912623A3D8A700285F18 /* CoreML.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8B7406B72A53FB0600AA652A /* ML Models */ = {
+			isa = PBXGroup;
+			children = (
+				8B7406B12A53F84200AA652A /* BatGroupsSonagramClassifier.mlmodel */,
+				8B7406B42A53FB0200AA652A /* BatCallTabularClassifier bT.mlmodel */,
+				8B7406B32A53FB0200AA652A /* BatCallTabularClassifier rF.mlmodel */,
+				8B7406B82A53FB4600AA652A /* BatCallTabularClassifier Arten bT.mlmodel */,
+				8B7406B92A53FB4600AA652A /* BatCallTabularClassifier Arten rF.mlmodel */,
+			);
+			path = "ML Models";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -108,8 +138,9 @@
 		8B17910C23A3D7F500285F18 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1120;
-				LastUpgradeCheck = 1120;
+				LastUpgradeCheck = 1430;
 				ORGANIZATIONNAME = "Volker Runkel";
 				TargetAttributes = {
 					8B17911323A3D7F500285F18 = {
@@ -140,6 +171,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B7406BF2A54100A00AA652A /* BoostedForestWindowController.xib in Resources */,
 				8B17911A23A3D7F700285F18 /* Assets.xcassets in Resources */,
 				8B17911D23A3D7F700285F18 /* MainMenu.xib in Resources */,
 			);
@@ -152,9 +184,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8BEBDE8723E090AB0074D573 /* NyctaloidBatCalls.mlmodel in Sources */,
-				8B398E7123E2CF8A00AA973C /* NyctaloidBatCallswithoutVmur.mlmodel in Sources */,
+				8B7406BB2A53FB4600AA652A /* BatCallTabularClassifier Arten rF.mlmodel in Sources */,
+				8B7406B62A53FB0200AA652A /* BatCallTabularClassifier bT.mlmodel in Sources */,
+				8B7406B52A53FB0200AA652A /* BatCallTabularClassifier rF.mlmodel in Sources */,
+				8B7406C12A542C5A00AA652A /* Extensions.swift in Sources */,
 				8B17911823A3D7F500285F18 /* AppDelegate.swift in Sources */,
+				8B7406B22A53F84200AA652A /* BatGroupsSonagramClassifier.mlmodel in Sources */,
+				8B7406BA2A53FB4600AA652A /* BatCallTabularClassifier Arten bT.mlmodel in Sources */,
+				8B7406BE2A54100A00AA652A /* BoostedForestWindowController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,6 +235,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -205,6 +243,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -222,7 +261,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -258,6 +297,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -265,6 +305,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -276,7 +317,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -292,7 +333,8 @@
 				CODE_SIGN_ENTITLEMENTS = CoreMLBats/CoreMLBats.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 6;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 3YKFA98U4Y;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = CoreMLBats/Info.plist;
@@ -300,7 +342,8 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.0.3;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = de.ecoobs.CoreMLBats;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -314,7 +357,8 @@
 				CODE_SIGN_ENTITLEMENTS = CoreMLBats/CoreMLBats.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 6;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 3YKFA98U4Y;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = CoreMLBats/Info.plist;
@@ -322,7 +366,8 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.0.3;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = de.ecoobs.CoreMLBats;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
