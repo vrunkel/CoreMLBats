@@ -37,3 +37,9 @@ As input a modified batIdent2 file is needed. The batIdent2 file holds measureme
 The two used algorithms are boostedForest and randomForest with the following evaluation results:
 ![boosted forest evaluation](Evaluation_boostedForest.png "boosted forest evaluation")
 ![random forest evaluation](Evaluation_randomForest.png "random forest evaluation")
+
+As described by Apple the model is evaluated using precision and recall [https://developer.apple.com/documentation/createml/mlclassifiermetrics/precisionrecall]: 
+
+Precision and recall are metrics calculated for each class. Together they describe the tradeoff between misapplying a label too liberally and missing examples of that label.
+Precision describes how effective the model was at applying a label only when appropriate for a given category (few false positives).
+Recall describes how effective the model was at finding all the relevant examples of a category (few false negatives).
