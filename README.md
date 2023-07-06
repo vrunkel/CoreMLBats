@@ -7,4 +7,6 @@ The input images must be sonograms created as black and white images with a dime
 
 In addition the v2 adds models for classifying tabular data created from bcAnalyze or bcAdmin (batIdent2 format).
 
+The training data is fully acessible in its [extra repository](https://github.com/vrunkel/CoreMLBats-model-calls). There the old training data as well as the new data (as ZIP file) can be downloaded.
+
 You can download the sources using GitHub or a [binary version ready to run](docs/CoreMLBats.zip)
